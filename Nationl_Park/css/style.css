@@ -66,19 +66,32 @@ body {
 header {
   border-bottom: 3px solid #d0a064;
   background-color: #167C80;
+  height: 75;
+  display: flex ;
+  flex-wrap: wrap ;
+  justify-content : center ;
+align-content : space-between ;
+
 }
 
 .logo {
-  padding: 15px;
+  padding: 10px;
   color: white;
   font-size: 2em;
   font-weight: bold;
+  justify-content : left ;
+  
 }
 
 nav ul li {
   padding: 15px;
+  margin: 0 ;
+  display: inline ;
+  
 }
-
+h3 {
+  font-style:italic ;
+}
 .navigation a {
   color: white;
   transition: all 0.2s;
@@ -87,6 +100,9 @@ nav ul li {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 0.8em;
+  display: inline ;
+  align-content : space-between ;
+  justify-content : flex-end 
 }
 
 .navigation li:hover a {
@@ -129,16 +145,27 @@ nav ul li {
   padding: 5px 15px;
   text-decoration:none;
   transition: all 0.2s;
+  width: 200 px ;
+  text-align: center ;
+  
+  
 }
 
 .aboutbtn:hover, .contactbtn:hover {
   background-color: #167C80;
   color: white;
   transition:all 0.2s;
+
+  
+  
 }
 
 .container .top {
   padding: 1.5em 0;
+  display: inline;
+  flex-wrap: wrap ;
+  justify-content : center ;
+ 
 }
 
 .top h3 {
@@ -263,6 +290,33 @@ footer h5 {
   footer {
     text-align: left;
     padding: 50px 15px 50px 200px;
+    
+    
+    
   }
 
+}
+.footer-sub {
+  text-align: center ;
+}
+.footer-right {
+  text-align : right ;
+}
+.aboutcol {
+  float: left;
+  width : 33.33%
+  
+}
+.aboutrow::after {
+  content: "" ;
+  clear: both ;
+  display : table ;
+}
+.aboutrow {
+  display: flex;
+}
+
+.aboutcol {
+  flex: 33.33%;
+  padding: 5px;
 }
